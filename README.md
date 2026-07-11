@@ -1,17 +1,108 @@
-# gyulrun
+# Gyul Run
 
-A new Flutter project.
+AI 기반 제주 웰니스 러닝 플랫폼, **Gyul Run**입니다.  
+사용자의 위치, 러닝 거리, 난이도, 선호도를 바탕으로 제주를 상징하는 모양의 러닝 코스를 추천하고, 완주 후에는 기록 카드와 주변 장소 추천을 제공하는 서비스입니다.
 
-## Getting Started
+## 프로젝트 소개
 
-This project is a starting point for a Flutter application.
+현대인의 신체 활동량은 감소하고 있으며, 특히 여행 중에는 평소 유지하던 운동 습관이 쉽게 끊어집니다.  
+제주도는 해안도로, 오름, 올레길 등 러닝에 적합한 자연환경을 가지고 있지만, 관광객이 낯선 지역에서 안전하고 재미있는 러닝 코스를 찾기는 어렵습니다.
 
-A few resources to get you started if this is your first Flutter project:
+**Gyul Run**은 이러한 문제를 해결하기 위해, 제주 상징 모양의 러닝 코스를 제공하고 러닝 경험을 관광·웰니스 콘텐츠로 확장하는 모바일 앱입니다.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 핵심 기능
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### AI 추천 코스
+
+- 귤런, 해녀런, 돌고래런 등 제주 상징 모양의 러닝 코스 제공
+- 거리, 난이도, 경사, 날씨, 방문자 정보 등을 고려한 코스 추천
+- EASY / NORMAL / HARD 난이도 분류
+
+### 코스 상세 정보
+
+- 지도 위에 러닝 경로 시각화
+- CCTV 개수, 바람, 방문자, 경사 등 직관적인 코스 데이터 제공
+- 코스별 안전 주의사항 및 러닝 팁 제공
+- 네이버 지도 연결 지원
+
+### 러닝 기록
+
+- 추천 코스를 따라 달리는 가이드 러닝
+- 자유롭게 달리는 자유런
+- 거리, 시간, 평균 페이스, 칼로리 기록
+- 완주 후 사진 촬영 및 별점 기록
+
+### 히스토리
+
+- 완주한 러닝 기록을 카드 형태로 저장
+- 여러 기록을 카드 캐러셀 형태로 확인
+- 기록별 주변 장소 추천
+- 완주 카드 이미지 저장 및 공유 가능
+
+## AI 활용
+
+Gyul Run은 단순한 경로 안내가 아니라, 다양한 데이터를 기반으로 러닝 코스를 생성하고 평가합니다.
+
+- 제주 상징 모양 분석
+- 도로망 위 러닝 가능 경로 생성
+- 사용자 거리와 난이도에 맞춘 코스 추천
+- 날씨, 경사, CCTV, 방문자 정보를 반영한 안전성 평가
+- 완주 위치 기반 주변 관광지 추천
+
+## 데이터 활용
+
+서비스는 다음과 같은 데이터를 활용하는 구조로 설계되었습니다.
+
+- 경사도 데이터
+- CCTV 위치 정보
+- 오름 위치 정보
+- 기상 정보
+- 방문자 정보
+- 웰니스 관광지 정보
+- 보행로 및 러닝 가능 경로 정보
+
+이를 통해 사용자가 안전하고 즐겁게 달릴 수 있는 제주형 러닝 코스를 제공합니다.
+
+## 기대 효과
+
+- 여행 중에도 운동 습관을 이어갈 수 있는 웰니스 경험 제공
+- 제주 자연환경과 러닝을 결합한 새로운 관광 콘텐츠 창출
+- 러닝 종료 후 주변 상권 추천을 통한 지역 경제 활성화
+- SNS 공유 가능한 러닝 카드로 사용자 참여와 확산 유도
+
+## 확장 방향
+
+### AI 고도화
+
+- 사용자 러닝 기록 기반 개인 맞춤 코스 추천
+- 페이스, 완주율, 체력 수준에 따른 난이도 자동 조정
+- 실시간 날씨와 혼잡도 기반 안전 경로 추천
+
+### 커뮤니티 기능
+
+- 완주 카드 공유
+- 러닝 아트 챌린지
+- 친구와 함께하는 그룹런
+- 인기 코스 랭킹 및 뱃지 시스템
+
+### 지역 상권 연계
+
+- 코스 주변 카페, 맛집, 관광지 추천
+- 완주자 대상 로컬 매장 할인 쿠폰 제공
+- 제휴 매장 광고 및 프로모션 모델
+- 숙소, 관광지, 웰니스 프로그램과 패키지 연계
+
+## 기술 스택
+
+- Flutter
+- Dart
+- Flutter Map
+- Geolocator
+- Image Picker
+- URL Launcher
+
+## 실행 방법
+
+```bash
+flutter pub get
+flutter run
